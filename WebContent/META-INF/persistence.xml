@@ -1,0 +1,19 @@
+<persistence>  
+<persistence-unit name="Users_LoggedIn">  
+     
+      <class>com.admin.usermanagement.bean.LoginBean</class>  
+      <class>com.admin.usermanagement.bean.User</class>  
+      
+  
+        
+     <properties>  
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>  
+         <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>  
+         <property name="javax.persistence.jdbc.user" value="hr"/>  
+         <property name="javax.persistence.jdbc.password" value="hr"/>  
+         <property name="eclipselink.logging.level" value="SEVERE"/>  
+         <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>  
+      </properties>  
+      
+    </persistence-unit>  
+</persistence>  
